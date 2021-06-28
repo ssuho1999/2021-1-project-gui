@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--파일 업로드 페이지-->
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>발표 태도 교정 프로그램</title>
+        <link type="text/css" rel="stylesheet" href="../css/FLPstyle.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                <div class="stick"></div>
+                
+                <h1>Loading...</h1>
+                
+            </div>
+        </div>
+    </body>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/FMPscript.js"></script>
+    <script>
+        var fileInfo = sessionStorage.getItem("fileinfo");
+        sessionStorage.setItem("fileinfo",fileInfo);
+    </script>
+</html>

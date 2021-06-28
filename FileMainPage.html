@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--파일 업로드 페이지-->
+<html>
+    <head>
+    <meta charset="UTF-8">    
+        <title>발표 태도 교정 프로그램</title>
+        <link type="text/css" rel="stylesheet" href="../css/FMPstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <a href="FileMainPage.html"><img class="logo" src="src/logo.PNG"></a>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+               <div class="content">
+                  <div class="icon">
+                     <i class="fas fa-cloud-upload-alt"></i>
+                  </div>
+                  <div class="text">
+                     <p id="guide">파일 끌어당기기 & 파일 선택하기</p>
+                     <p id="sub">(파일 크기에 따라 선택된 파일의 업로드 시간이 달라질 수 있습니다.)</p>
+                  </div>
+               </div>
+               <div id="cancel-btn">
+                  <i class="fas fa-times"></i>
+               </div>
+               <div class="file-name">
+                  File name here
+               </div>
+            </div>
+            <button onclick="defaultBtnActive()" id="custom-btn1">파일 선택하기</button>
+            <input id="default-btn" type="file" hidden>
+            <button onclick="loadingActive()" id="custom-btn2">분석하기</button>
+         </div>
+    </body>    
+</html>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/FMPscript.js"></script>

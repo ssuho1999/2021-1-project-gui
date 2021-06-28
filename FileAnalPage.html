@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--파일 업로드 페이지-->
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>발표 태도 교정 프로그램</title>
+        <link type="text/css" rel="stylesheet" href="../css/FAPstyle.css">
+        <a href="../FileMainPage.html"><img class="logo" src="src/logo.PNG"></a>
+        
+    </head>
+    <body>
+        <div class="loading">
+        </div>
+        <div id="header">
+        </div>
+        <div id="section">
+            <section id="skin">
+                <video id="myMovie" width="60%" height="50%">
+                    <source id="uploadedVideo" src=""/>
+                </video>
+                <nav>
+                    <div id="buttons2">
+                        <p id="descr">Voice</p>
+                    </div>
+                    
+                    <div id="voiceBars">
+                        <ul id="voice-marker-list">
+
+                        </ul>
+                    </div>
+                </nav>
+                <nav>
+                    <div id="buttons">
+                        <button type="button" id="playButton">Play</button>
+                    </div>
+                    <div id="defaultBar">
+                        <div id="progressBar"></div>
+                    </div>
+                    <div style="clear:both"></div>
+                </nav>
+                <nav>
+                    <div id="buttons2">
+                        <p id="descr">Face</p>
+                    </div>
+                    <div id="faceBars">
+                        <ul id="face-marker-list">
+
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <div id="side">
+            <div style="height:600px; overflow:auto;">
+                <li id="voice-des-title"></li>
+                <ul id="voice-des-list">
+                </ul>
+                <li id="face-des-title"></li>
+                <ul id="face-des-list">
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="analScript" style="font-size: 16pt; text-align: left;">
+                
+            </p>
+        </div>
+    </body>    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../js/FAPscript.js"></script>
+    
+</html>
